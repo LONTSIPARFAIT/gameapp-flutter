@@ -36,7 +36,7 @@ class SearchSection extends StatelessWidget {
               ),
               child: const Icon(
                 Icons.mic_outlined,
-                color: Colors.whit,
+                color: Colors.white,
                 size: 25,
               ),
             ),
