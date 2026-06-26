@@ -20,7 +20,10 @@ class PopularGame extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadiusGeometry.circular(15),
             ),
-            child: Image.asset(games[index].bgImage),
+            child: Container(
+              padding: EdgeInsets.all(5),
+              child: ClipRRect(child: Image.asset(games[index].bgImage)),
+            ),
           ),
         )),
         separatorBuilder: ((context, index) => SizedBox(width: 50)),
