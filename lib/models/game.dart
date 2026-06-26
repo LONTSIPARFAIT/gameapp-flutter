@@ -3,4 +3,5 @@ class Game {
   String Icon;
   String name;
   String type;
+  num score;
 }
