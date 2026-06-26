@@ -8,14 +8,20 @@ class PopularGame extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 200,
-      color: Colors.amber,
       child: ListView.separated(
+        padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
         scrollDirection: Axis.horizontal,
         itemBuilder: ((context, index) => GestureDetector(
           onTap: (() => print('on tap')),
-          child: Card(child: Image.asset(games[index].bgImage)),
+          child: Card(
+            elevation: 5,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadiusGeometry.circular(15),
+            ),
+            child: Image.asset(games[index].bgImage),
+          ),
         )),
         separatorBuilder: ((context, index) => SizedBox(width: 50)),
         itemCount: games.length,
