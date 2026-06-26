@@ -10,9 +10,9 @@ class Game {
   List<String> images;
 
   Game(
-    this.bgImage, 
-    this.icon, 
-    this.name, 
+    this.bgImage,
+    this.icon,
+    this.name,
     this.type,
     this.score,
     this.download,
@@ -20,4 +20,20 @@ class Game {
     this.description,
     this.images,
   );
+
+  static List<Game> games() {
+    return [
+      Game(
+        '',
+        '',
+        'Ori and The forest',
+        'Adventure',
+        4.5,
+        382,
+        324,
+        "Ori is stranger to peril, but when a fateful flight puts the oulet ku in har'as way.",
+        ['', '', ''],
+      ),
+    ];
+  }
 }
