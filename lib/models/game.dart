@@ -5,6 +5,6 @@ class Game {
   String type;
   num score;
   num download;
-  num score;
-  num score;
+  num rewiew;
+  String description;
 }
