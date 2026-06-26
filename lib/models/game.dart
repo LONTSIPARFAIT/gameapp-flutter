@@ -4,7 +4,7 @@ class Game {
   String name;
   String type;
   num score;
-  num score;
+  num download;
   num score;
   num score;
 }
