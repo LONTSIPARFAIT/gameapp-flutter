@@ -9,6 +9,8 @@ class PopularGame extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 200,
+      color: Colors.amber,
       child: ListView.separated(
         itemBuilder: ((context, index) => GestureDetector(
           onTap: (() => print('on tap')),
