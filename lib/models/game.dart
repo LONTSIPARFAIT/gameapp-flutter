@@ -24,15 +24,15 @@ class Game {
   static List<Game> games() {
     return [
       Game(
-        '',
-        '',
+        'assets/images/img.jpg',
+        'assets/images/img.jpg',
         'Ori and The forest',
         'Adventure',
         4.5,
         382,
         324,
         "Ori is stranger to peril, but when a fateful flight puts the oulet ku in har'as way.",
-        ['', '', ''],
+        ['assets/images/img.jpg', 'assets/images/img.jpg', 'assets/images/img.jpg'],
       ),
     ];
   }
