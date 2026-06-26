@@ -14,7 +14,7 @@ class PopularGame extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
         scrollDirection: Axis.horizontal,
         itemBuilder: ((context, index) => GestureDetector(
-          onTap: (() => print('on tap')),
+          onTap: () => print('on tap'),
           child: Card(
             elevation: 5,
             shape: RoundedRectangleBorder(
@@ -22,7 +22,10 @@ class PopularGame extends StatelessWidget {
             ),
             child: Container(
               padding: EdgeInsets.all(5),
-              child: ClipRRect(child: Image.asset(games[index].bgImage)),
+              child: ClipRRect(
+                borderRadius: BorderRadiusGeometry.circular(15),
+                child: Image.asset(games[index].bgImage),
+              ),
             ),
           ),
         )),

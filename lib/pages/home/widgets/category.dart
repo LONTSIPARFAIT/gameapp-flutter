@@ -84,6 +84,14 @@ class CategorySection extends StatelessWidget {
             ),
           ),
           PopularGame(),
+
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: const Text(
+              'Newest Game',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+          ),
         ],
       ),
     );
