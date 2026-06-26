@@ -11,14 +11,15 @@ class PopularGame extends StatelessWidget {
     return Container(
       height: 200,
       color: Colors.amber,
-    //   child: ListView.separated(
-    //     itemBuilder: ((context, index) => GestureDetector(
-    //       onTap: (() => print('on tap')),
-    //       child: Card(child: Image.asset(games[index].bgImage)),
-    //     )),
-    //     separatorBuilder: ((context, index) => SizedBox(width: 50)),
-    //     itemCount: games.length,
-    //   ),
+      child: ListView.separated(
+        scrollDirection: Axis.horizontal,
+        itemBuilder: ((context, index) => GestureDetector(
+          onTap: (() => print('on tap')),
+          child: Card(child: Image.asset(games[index].bgImage)),
+        )),
+        separatorBuilder: ((context, index) => SizedBox(width: 50)),
+        itemCount: games.length,
+      ),
     );
   }
 }
