@@ -9,7 +9,7 @@ class PopularGame extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 200,
+      height: 250,
       child: ListView.separated(
         padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
         scrollDirection: Axis.horizontal,
