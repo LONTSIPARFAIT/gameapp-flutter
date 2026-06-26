@@ -13,6 +13,11 @@ class Game {
     this.bgImage, 
     this.icon, 
     this.name, 
-    this.score
+    this.type,
+    this.score,
+    this.download,
+    this.rewiew,
+    this.description,
+    this.images,
   );
 }
