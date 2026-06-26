@@ -10,7 +10,10 @@ class PopularGame extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: ListView.separated(
-        itemBuilder: itemBuilder,
+        itemBuilder: ((context, index) => GestureDetector(
+          onTap: (() => print('on tap')),
+          child: Card(child: Image.asset(games[index].bgImage)),
+        )),
         separatorBuilder: ((context, index) => SizedBox(width: 50)),
         itemCount: games.length,
       ),
