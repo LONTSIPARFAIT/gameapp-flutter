@@ -91,8 +91,8 @@ class CategorySection extends StatelessWidget {
               'Newest Game',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
-          NewestGame(),
           ),
+          NewestGame(),
         ],
       ),
     );
