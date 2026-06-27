@@ -83,7 +83,7 @@ class CategorySection extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
           ),
-          PopularGam(),
+          PopularGa(),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: const Text(
