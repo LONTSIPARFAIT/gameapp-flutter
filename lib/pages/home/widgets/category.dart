@@ -84,6 +84,7 @@ class CategorySection extends StatelessWidget {
             ),
           ),
           PopularGame(),
+          PopularGame(),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: const Text(
