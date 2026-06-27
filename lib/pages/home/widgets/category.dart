@@ -83,8 +83,7 @@ class CategorySection extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
           ),
-          PopularGame(),
-
+          PopularGam(),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: const Text(
@@ -92,6 +91,7 @@ class CategorySection extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
           ),
+          // NewestGame(),
         ],
       ),
     );
