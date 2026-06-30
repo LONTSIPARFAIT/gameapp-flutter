@@ -92,7 +92,7 @@ class CategorySection extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
           ),
-          // NewestG(),
+          // NewestGa(),
         ],
       ),
     );
